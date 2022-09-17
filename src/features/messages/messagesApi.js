@@ -69,7 +69,7 @@ export const messagesApi = apiSlice.injectEndpoints({
                 "getMessages",
                 message?.data?.conversationId.toString(),
                 (draft) => {
-                  draft.push(message?.data);
+                  draft.dat.push(message?.data);
                   console.log(`Add mgs draft data ${JSON.stringify(draft)}`);
                 }
               )

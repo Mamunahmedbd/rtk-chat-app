@@ -176,7 +176,7 @@ export const conversationsApi = apiSlice.injectEndpoints({
                 res.conversationId.toString(),
                 (draft) => {
                   console.log(JSON.stringify(draft));
-                  draft.push(res);
+                  draft.data.push(res);
                 }
               )
             );
